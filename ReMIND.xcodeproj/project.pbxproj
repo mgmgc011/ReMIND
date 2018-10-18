@@ -12,6 +12,7 @@
 		BBE6FC792178F74100778095 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBE6FC772178F74100778095 /* Main.storyboard */; };
 		BBE6FC7B2178F74300778095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBE6FC7A2178F74300778095 /* Assets.xcassets */; };
 		BBE6FC7E2178F74300778095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBE6FC7C2178F74300778095 /* LaunchScreen.storyboard */; };
+		BBE6FC862179090C00778095 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE6FC852179090C00778095 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BBE6FC7A2178F74300778095 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBE6FC7D2178F74300778095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBE6FC7F2178F74300778095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBE6FC852179090C00778095 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		BBE6FC722178F74100778095 /* ReMIND */ = {
 			isa = PBXGroup;
 			children = (
-				BBE6FC732178F74100778095 /* AppDelegate.swift */,
-				BBE6FC752178F74100778095 /* TodoListVC.swift */,
-				BBE6FC772178F74100778095 /* Main.storyboard */,
-				BBE6FC7A2178F74300778095 /* Assets.xcassets */,
-				BBE6FC7C2178F74300778095 /* LaunchScreen.storyboard */,
-				BBE6FC7F2178F74300778095 /* Info.plist */,
+				BBE6FC872179091100778095 /* Data Model */,
+				BBE6FC892179092900778095 /* Controllers */,
+				BBE6FC8A2179093500778095 /* Views */,
+				BBE6FC882179091A00778095 /* Supporting Files */,
 			);
 			path = ReMIND;
+			sourceTree = "<group>";
+		};
+		BBE6FC872179091100778095 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				BBE6FC852179090C00778095 /* Item.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		BBE6FC882179091A00778095 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBE6FC732178F74100778095 /* AppDelegate.swift */,
+				BBE6FC7C2178F74300778095 /* LaunchScreen.storyboard */,
+				BBE6FC7A2178F74300778095 /* Assets.xcassets */,
+				BBE6FC7F2178F74300778095 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BBE6FC892179092900778095 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BBE6FC752178F74100778095 /* TodoListVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BBE6FC8A2179093500778095 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BBE6FC772178F74100778095 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBE6FC762178F74100778095 /* TodoListVC.swift in Sources */,
+				BBE6FC862179090C00778095 /* Item.swift in Sources */,
 				BBE6FC742178F74100778095 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +320,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 695P6D89C6;
-				INFOPLIST_FILE = ReMIND/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ReMIND/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 695P6D89C6;
-				INFOPLIST_FILE = ReMIND/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ReMIND/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

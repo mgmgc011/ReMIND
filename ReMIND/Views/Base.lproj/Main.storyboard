@@ -31,7 +31,13 @@
                             <outlet property="delegate" destination="JfZ-k3-tmn" id="GyW-cj-gyR"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="ReMIND" id="TfG-nm-f2J"/>
+                    <navigationItem key="navigationItem" title="ReMIND" id="TfG-nm-f2J">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="7wJ-ov-dAA">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="JfZ-k3-tmn" id="SZi-8Q-mIZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pMn-Gq-Dgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
