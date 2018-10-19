@@ -13,8 +13,9 @@
 		BBE6FC792178F74100778095 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBE6FC772178F74100778095 /* Main.storyboard */; };
 		BBE6FC7B2178F74300778095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBE6FC7A2178F74300778095 /* Assets.xcassets */; };
 		BBE6FC7E2178F74300778095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBE6FC7C2178F74300778095 /* LaunchScreen.storyboard */; };
-		BBE6FC8F2179185000778095 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BBE6FC8D2179185000778095 /* DataModel.xcdatamodeld */; };
 		BBE6FCB221795B5E00778095 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE6FCB121795B5E00778095 /* CategoryTableViewController.swift */; };
+		BBE6FCB62179C09B00778095 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE6FCB52179C09B00778095 /* Item.swift */; };
+		BBE6FCB82179C0A800778095 /* ItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE6FCB72179C0A800778095 /* ItemCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +28,9 @@
 		BBE6FC7A2178F74300778095 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBE6FC7D2178F74300778095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBE6FC7F2178F74300778095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BBE6FC8E2179185000778095 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		BBE6FCB121795B5E00778095 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		BBE6FCB52179C09B00778095 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		BBE6FCB72179C0A800778095 /* ItemCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCategory.swift; sourceTree = "<group>"; };
 		DEECCA4771EF98C63DC4E7F4 /* Pods-ReMIND.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReMIND.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReMIND/Pods-ReMIND.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,7 +95,8 @@
 		BBE6FC872179091100778095 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				BBE6FC8D2179185000778095 /* DataModel.xcdatamodeld */,
+				BBE6FCB72179C0A800778095 /* ItemCategory.swift */,
+				BBE6FCB52179C09B00778095 /* Item.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -240,8 +243,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBE6FCB62179C09B00778095 /* Item.swift in Sources */,
 				BBE6FC762178F74100778095 /* TodoListVC.swift in Sources */,
-				BBE6FC8F2179185000778095 /* DataModel.xcdatamodeld in Sources */,
+				BBE6FCB82179C0A800778095 /* ItemCategory.swift in Sources */,
 				BBE6FC742178F74100778095 /* AppDelegate.swift in Sources */,
 				BBE6FCB221795B5E00778095 /* CategoryTableViewController.swift in Sources */,
 			);
@@ -393,7 +397,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 695P6D89C6;
 				INFOPLIST_FILE = "$(SRCROOT)/ReMIND/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chingoo.ReMIND;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -409,7 +416,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 695P6D89C6;
 				INFOPLIST_FILE = "$(SRCROOT)/ReMIND/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chingoo.ReMIND;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -439,19 +449,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		BBE6FC8D2179185000778095 /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				BBE6FC8E2179185000778095 /* DataModel.xcdatamodel */,
-			);
-			currentVersion = BBE6FC8E2179185000778095 /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = BBE6FC682178F74000778095 /* Project object */;
 }
