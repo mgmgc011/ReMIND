@@ -16,6 +16,7 @@
 		BBE6FCB221795B5E00778095 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE6FCB121795B5E00778095 /* CategoryTableViewController.swift */; };
 		BBE6FCB62179C09B00778095 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE6FCB52179C09B00778095 /* Item.swift */; };
 		BBE6FCB82179C0A800778095 /* ItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE6FCB72179C0A800778095 /* ItemCategory.swift */; };
+		BBE6FCBA2179D19400778095 /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE6FCB92179D19400778095 /* SwipeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		BBE6FCB121795B5E00778095 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		BBE6FCB52179C09B00778095 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		BBE6FCB72179C0A800778095 /* ItemCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCategory.swift; sourceTree = "<group>"; };
+		BBE6FCB92179D19400778095 /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 		DEECCA4771EF98C63DC4E7F4 /* Pods-ReMIND.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReMIND.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReMIND/Pods-ReMIND.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 			children = (
 				BBE6FCB121795B5E00778095 /* CategoryTableViewController.swift */,
 				BBE6FC752178F74100778095 /* TodoListVC.swift */,
+				BBE6FCB92179D19400778095 /* SwipeTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -223,13 +226,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ReMIND/Pods-ReMIND-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -247,6 +254,7 @@
 				BBE6FC762178F74100778095 /* TodoListVC.swift in Sources */,
 				BBE6FCB82179C0A800778095 /* ItemCategory.swift in Sources */,
 				BBE6FC742178F74100778095 /* AppDelegate.swift in Sources */,
+				BBE6FCBA2179D19400778095 /* SwipeTableViewController.swift in Sources */,
 				BBE6FCB221795B5E00778095 /* CategoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,10 +405,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 695P6D89C6;
 				INFOPLIST_FILE = "$(SRCROOT)/ReMIND/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chingoo.ReMIND;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -416,10 +421,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 695P6D89C6;
 				INFOPLIST_FILE = "$(SRCROOT)/ReMIND/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chingoo.ReMIND;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
